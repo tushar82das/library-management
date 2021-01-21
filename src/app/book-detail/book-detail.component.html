@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-sm-4">
+    <img src="../../assets/images/Book.jpg" class="img-responsive margin" style="width:70%" alt="Image">
+
+    <hr>
+  </div>
+  <div class="col-sm-6" style="text-align:left">
+    <div *ngIf="!successMsg">
+      <p>
+        <b>Name:</b> {{name}}<br>
+        <b>Author:</b> {{author}}<br>
+        <b>Stock Available: {{stock}}</b>
+      </p>
+      <form [formGroup]="borrowBookForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="borrowerName">Name of Borrower:</label>
+          <input type="text" class="form-control" id="borrowerName" formControlName="borrowerName">
+        </div>
+        <div class="form-group">
+          <label for="borrowerPhone">Phone:</label>
+          <input type="text" class="form-control" id="borrowerPhone" formControlName="borrowerPhone">
+        </div>
+        <div class="form-group">
+          <label for="">Date:</label>
+          <input type="text" placeholder="Daterangepicker" id="date" class="form-control" bsDaterangepicker
+            formControlName="date">
+        </div>
+        <button type="button" routerLink="/books" class="btn btn-primary">Cancel</button>&nbsp;&nbsp;
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <div *ngIf="successMsg">
+      <h4>{{successMsg}}</h4>
+    </div>
+  </div>
+</div>

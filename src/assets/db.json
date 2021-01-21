@@ -1,0 +1,69 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "Politics of Opportunism",
+      "author": "R P N Singh",
+      "stock": "5"
+    },
+    {
+      "id": 2,
+      "name": "The Testaments",
+      "author": "Margaret Atwood",
+      "stock": "2"
+    },
+    {
+      "id": 3,
+      "name": "Celestial Bodies",
+      "author": "Jokha Alharthi",
+      "stock": "4"
+    },
+    {
+      "id": 4,
+      "name": "Cheque book",
+      "author": "Vasdev Mohi",
+      "stock": "2"
+    },
+    {
+      "id": 5,
+      "name": "The Overstory",
+      "author": "Richard Powers",
+      "stock": "1"
+    }
+  ],
+  "borrow-list": [
+    {
+      "id": 1,
+      "bookAuthor": "R P N Singh",
+      "bookName": "Politics of Opportunism",
+      "borrowerName": "Tushar",
+      "borrowerPhone": "7377163306",
+      "date": [
+        "2021-01-21T06:55:51.000Z",
+        "2021-01-29T06:55:51.000Z"
+      ]
+    },
+    {
+      "borrowerName": "Vikram Samal",
+      "borrowerPhone": "9876543456",
+      "date": [
+        "2021-01-26T06:55:51.000Z",
+        "2021-01-29T06:55:51.000Z"
+      ],
+      "bookName": "Celestial Bodies",
+      "bookAuthor": "Jokha Alharthi",
+      "id": 2
+    },
+    {
+      "borrowerName": "Sagar Singh",
+      "borrowerPhone": "689877558",
+      "date": [
+        "2021-01-19T18:30:00.000Z",
+        "2021-01-22T18:30:00.000Z"
+      ],
+      "bookName": "Celestial Bodies",
+      "bookAuthor": "Jokha Alharthi",
+      "id": 3
+    }
+  ]
+}
